@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Familias de fuente</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estiloFamilias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inconsolata&family=Raleway&family=Ramaraja&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="../index.html">Volver atrás</a>
+    <h1>Familias de fuente en CSS</h1>
+    <h2>Una decisión importante</h2>
+    <p>Elegir la fuente correcta tiene un gran impacto en cómo los lectores experimentan un sitio web. La fuente
+        correcta puede crear una fuerte identidad para su marca.</p>
+    <p>Es importante usar una fuente que sea fácil de leer. La fuente agrega valor a su texto. También es importante
+        elegir el color y el tamaño de texto correctos para la fuente.</p>
+    <p>Info extraída de <a target="_blank" href="https://www.w3schools.com/css/css_font.asp">W3Schools</a></p>
+
+    <ul>
+        <li><a href="#genericas">Familias de fuentes genéricas</a></li>
+        <li><a href="#seguras">Fuentes 'seguras'</a></li>
+        <li><a href="#google">Fuentes con Google Fonts</a></li>
+    </ul>
+    <hr>
+
+    <h2 id="genericas">Familias de fuentes genéricas</h2>
+    <img src="https://www.w3schools.com/css/serif.gif" alt="Comparativa de fuentes">
+    <p>Las fuentes <strong>serif</strong> tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de
+        formalidad y elegancia.</p>
+    <ul>
+        <li class="ejemplo-fuente times">Hola, soy Times New Roman</li>
+        <li class="ejemplo-fuente georgia">Hola, soy Georgia</li>
+        <li class="ejemplo-fuente garamond">Hola, soy Garamond</li>
+    </ul>
+    <p>Las fuentes <strong>sans-serif</strong> tienen líneas limpias (sin pequeños trazos adjuntos). Crean un aspecto
+        moderno y minimalista. Son preferibles para las pantallas de las computadoras.</p>
+    <ul>
+        <li class="ejemplo-fuente arial">Hola, soy Arial</li>
+        <li class="ejemplo-fuente verdana">Hola, soy Verdana</li>
+        <li class="ejemplo-fuente tahoma">Hola, soy Tahoma</li>
+    </ul>
+    <p>Las fuentes <strong>monoespaciadas</strong> tienen todas las letras del mismo ancho fijo. Crean un aspecto
+        mecánico.</p>
+    <ul>
+        <li class="ejemplo-fuente courier">Hola, soy Courier New</li>
+        <li class="ejemplo-fuente lucida">Hola, soy Lucida Console</li>
+        <li class="ejemplo-fuente consolas">Hola, soy Consolas</li>
+    </ul>
+    <p>Las fuentes <strong>cursivas</strong> imitan la escritura humana.</p>
+    <ul>
+        <li class="ejemplo-fuente segoe1">Hola, soy Segoe Script</li>
+        <li class="ejemplo-fuente segoe2">Hola, soy Segoe Print</li>
+    </ul>
+    <p>Las fuentes <strong>de fantasía</strong> son fuentes decorativas/divertidas.</p>
+    <ul>
+        <li class="ejemplo-fuente wingdings">Hola, soy Wingdings</li>
+    </ul>
+
+    <h2 id="seguras">Fuentes 'seguras'</h2>
+    <p>Las fuentes web seguras son fuentes que se instalan universalmente en todos los navegadores y dispositivos. </p>
+    <ul>
+        <li class="arial">Arial (sans-serif)</li>
+        <li class="times">Times New Roman (serif)</li>
+        <li class="courier">Courier New (monospace)</li>
+    </ul>
+    <p>Sin embargo, no hay fuentes 100% completamente seguras para la web. Siempre existe la posibilidad de que no se
+        encuentre una fuente o no se instale correctamente. Por lo tanto, es muy importante utilizar siempre fuentes
+        alternativas.</p>
+    <p>Esto significa que debe agregar una lista de "fuentes de respaldo" similares en la propiedad de familia de
+        fuentes. Si la primera fuente no funciona, el navegador probará con la siguiente, y con la siguiente, y así
+        sucesivamente. Siempre finalice la lista con un nombre de familia de fuente genérico.</p>
+    <p>Antes de publicar su sitio web, siempre verifique cómo aparecen sus fuentes en diferentes navegadores y
+        dispositivos, ¡y siempre use fuentes alternativas!</p>
+
+    <h2 id="google">Fuentes con Google Fonts</h2>
+    <p>Si no desea utilizar ninguna de las fuentes estándar en HTML, puede utilizar <a target="_blank"
+            href="https://fonts.google.com/">Google Fonts</a>. Es de uso gratuito y tiene más de 1000 fuentes para
+        elegir.</p>
+    <p>Simplemente agregue un enlace de hoja de estilo especial en el <code>&lt;head&gt;</code>y luego consulte la
+        fuente en el CSS.</p>
+    <ul>
+        <li class="ejemplo-fuente raleway">Hola, soy Raleway, una fuente sans-serif importada de Google Fonts</li>
+        <li class="ejemplo-fuente ramaraja">Hola, soy Ramaraja, una fuente serif importada de Google Fonts</li>
+        <li class="ejemplo-fuente inconsolata">Hola, soy Inconsolata, una fuente monospace importada de Google Fonts</li>
+        <li class="ejemplo-fuente caveat">Hola, soy Caveat, una fuente cursive importada de Google Fonts</li>
+    </ul>
+
+</body>
+
+</html>

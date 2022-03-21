@@ -1,0 +1,76 @@
+/*
+    Si el nombre de la fuente es más de una palabra,
+    debe estar entre comillas, como: "Times New Roman".
+
+    La propiedad font-family debe contener varios nombres de fuentes como un sistema de "alternativa", para garantizar la máxima compatibilidad entre navegadores/sistemas operativos.
+    
+    Los nombres de las fuentes deben estar separados por comas. Comience con la fuente que desee y termine con una familia genérica (para permitir que el navegador elija una fuente similar en la familia genérica, si no hay otras fuentes disponibles).
+*/
+
+.ejemplo-fuente {
+    font-size: 1.2em;
+}
+
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.georgia {
+    font-family: Georgia, serif;
+}
+
+.garamond {
+    font-family: Garamond, serif;
+}
+
+.arial {
+    font-family: Arial, sans-serif;
+}
+
+.verdana {
+    font-family: Verdana, sans-serif;
+}
+
+.tahoma {
+    font-family: Tahoma, sans-serif;
+}
+
+.courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.lucida {
+    font-family: 'Lucida Console', monospace;
+}
+
+.consolas {
+    font-family: 'Consolas', monospace;
+}
+
+.segoe1 {
+    font-family: 'Segoe Script', cursive;
+}
+
+.segoe2 {
+    font-family: 'Segoe Print', cursive;
+}
+
+.wingdings {
+    font-family: 'Wingdings', fantasy;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.ramaraja {
+    font-family: 'Ramaraja', serif;
+}
+
+.inconsolata {
+    font-family: 'Inconsolata', monospace;
+}
+
+.caveat {
+    font-family: 'Caveat', cursive;
+}
