@@ -1,0 +1,44 @@
+html {
+    font-size: 16px;
+}
+
+.caja {
+    background-color: #f2faff;
+    padding: 0 0.3em 0.3em 0.3em;
+    margin-top: 1rem;
+}
+
+.caja h3 {
+    margin: 0;
+    background-color: #2c637f;
+    color: white;
+    padding: 0.3em;
+    font-size: 1.3em;
+}
+
+.ejemplos-unidad {
+    padding: 0.3em;
+    margin: 0.3em;
+    border: #2c637f 2px solid;
+}
+
+p.ejemplo-unidad {
+    margin: 0.3em 0 0.3em 0;
+}
+
+.tabla-px-em {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+.tabla-px-em th {
+    width:33%;
+    font-weight:bold;
+}
+
+.tabla-px-em tr.destacado {
+    background-color:#2c637f;
+    color:white;
+}
+

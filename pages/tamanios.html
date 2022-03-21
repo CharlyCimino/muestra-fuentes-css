@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tamaños de fuente</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estiloTamanios.css">
+</head>
+
+<body>
+    <a href="../index.html">Volver atrás</a>
+    <h1>Tamaños de fuente en CSS</h1>
+    <h2>Demostración de unidades absolutas y relativas</h2>
+    <p>El aprendizaje de unidades absolutas y relativas aplica también para otras propiedades que requieran dimensiones, como
+        <code>margin</code>, <code>padding</code>, <code>width</code>, <code>heigth</code>, <code>border</code> y otras.</p>
+    <p>Info extraída de <a target="_blank" href="https://www.w3schools.com/cssref/css_units.asp">W3Schools</a></p>
+
+    <ul>
+        <li><a href="#absolutas">Unidades absolutas</a></li>
+        <li><a href="#relativas">Unidades relativas</a></li>
+        <li><a href="#defecto">Tamaños por defecto</a></li>
+        <li><a href="#diferencias">Diferencias entre <code>px</code>, <code>em</code> y <code>%</code></a></li>
+        <li><a href="#otrasAbsolutas">Otras unidades absolutas</a></li>
+        <li><a href="#otrasRelativas">Otras unidades relativas</a></li>
+    </ul>
+    <hr>
+
+    <h2 id="absolutas">Unidades absolutas</h2>
+    <p>Las unidades de longitud absoluta son fijas y una longitud expresada en cualquiera de ellas aparecerá exactamente
+        con ese tamaño.</p>
+    <p>Las unidades de longitud absoluta no se recomiendan para usar en pantalla, porque los tamaños de pantalla varían
+        mucho. Sin embargo, se pueden utilizar si se conoce el medio de salida, por ejemplo, para el diseño de
+        impresión.</p>
+    <ul>
+        <li>Establece el texto en un tamaño especificado.</li>
+        <li>No permite que un usuario cambie el tamaño del texto en todos los navegadores (malo por razones de
+            accesibilidad)</li>
+        <li>El tamaño absoluto es útil cuando se conoce el tamaño físico de la salida</li>
+    </ul>
+
+    <div class="caja">
+        <h3>px (Pixel)</h3>
+        <h4>1px = 1/96 de 1in</h4>
+        <p>Los píxeles (<code>px</code>) son relativos al dispositivo de visualización. Para dispositivos de bajo dpi,
+            1px es un píxel de dispositivo (punto) de la pantalla. Para impresoras y pantallas de alta resolución, 1px
+            implica múltiples píxeles del dispositivo.</p>
+        <p>Ajustar el tamaño del texto con píxeles le da un control total sobre el tamaño del texto.</p>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad px1">Párrafo de 1px</p>
+            <p class="ejemplo-unidad px2">Párrafo de 10px</p>
+            <p class="ejemplo-unidad px3">Párrafo de 20px</p>
+        </div>
+    </div>
+
+    <h2 id="relativas">Unidades relativas</h2>
+    <p>Las unidades de longitud relativa especifican una longitud relativa a otra propiedad de longitud. Las unidades de
+        longitud relativa escalan mejor entre diferentes medios de renderizado.</p>
+
+    <ul>
+        <li>Establece el tamaño relativo a los elementos circundantes.</li>
+        <li>Permite a un usuario cambiar el tamaño del texto en los navegadores.</li>
+    </ul>
+
+    <div class="caja">
+        <h3>em</h3>
+        <p>Para permitir a los usuarios cambiar el tamaño del texto (en el menú del navegador), muchos desarrolladores
+            usan em en lugar de píxeles.</p>
+        <p>1em es igual al tamaño de fuente actual. El tamaño de texto predeterminado en los navegadores es 16px.
+            Entonces, el tamaño predeterminado de 1em es 16px.</p>
+        <p>El tamaño se puede calcular de píxeles a <code>em</code> usando esta fórmula: <code>pixels/16=em</code></p>
+        <div class="ejemplos-unidad dif-em-rem">
+            <p class="ejemplo-unidad em1">Párrafo de 0.7em</p>
+            <p class="ejemplo-unidad em2">Párrafo de 1em</p>
+            <p class="ejemplo-unidad em3">Párrafo de 1.3em</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>rem</h3>
+        <p>Relativo al tamaño de fuente del elemento raíz (<code>&lt;html&gt;</code>).
+        </p>
+        <div class="ejemplos-unidad dif-em-rem">
+            <p class="ejemplo-unidad rem1">Párrafo de 0.7rem</p>
+            <p class="ejemplo-unidad rem2">Párrafo de 1rem</p>
+            <p class="ejemplo-unidad rem3">Párrafo de 1.3rem</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>%</h3>
+        <p>Relativo al elemento padre.</p>
+        <div class="ejemplos-unidad dif-em-rem">
+            <p class="ejemplo-unidad porc1">Párrafo de 70% del tamaño de fuente del elemento padre.</p>
+            <p class="ejemplo-unidad porc2">Párrafo de 100% del tamaño de fuente del elemento padre.</p>
+            <p class="ejemplo-unidad porc3">Párrafo de 130% del tamaño de fuente del elemento padre.</p>
+        </div>
+    </div>
+
+
+    <h2 id="defecto">Tamaños por defecto</h2>
+    <p>Si no especifica un tamaño de fuente, el predeterminado es:</p>
+    <ul>
+        <li>Tamaño general (párrafos, links, listas): 16px (1em)</li>
+        <li><code>h1</code>: 32px (2em)</li>
+        <li><code>h2</code>: 24px (1.5em)</li>
+        <li><code>h3</code>: 18.72px (1.17em)</li>
+        <li><code>h4</code>: 16px (1em)</li>
+        <li><code>h5</code>: 13.28px (0.83em)</li>
+        <li><code>h6</code>: 10.72px (0.67em)</li>
+    </ul>
+
+    <h2 id="diferencias">Diferencias entre <code>px</code>, <code>em</code> y <code>%</code></h2>
+    <p>El píxel es una medida estática, mientras que el porcentaje y <code>em</code> son medidas relativas. El
+        porcentaje depende del tamaño de fuente principal.</p>
+    <p><code>em</code> es relativo al tamaño de fuente actual del elemento (2em significa 2 veces el tamaño de la fuente
+        actual). Entonces, si el tamaño de fuente del cuerpo es de 16 píxeles, entonces el 150% será de 24 píxeles (1,5
+        * 16) y 2em será de 32 píxeles (16 * 2).</p>
+
+        <p><a target="_blank" href="https://www.w3schools.com/tags/ref_pxtoemconversion.asp">Conversor de píxels a em y viceversa</a></p>
+
+    <table class="tabla-px-em">
+        <tbody>
+            <tr>
+                <th>px</th>
+                <th>em</th>
+                <th>%</th>
+            </tr>
+            <tr>
+                <td>10px</td>
+                <td>0.6250em</td>
+                <td>62.50%</td>
+            </tr>
+            <tr>
+                <td>11px</td>
+                <td>0.6875em</td>
+                <td>68.75%</td>
+            </tr>
+            <tr>
+                <td>12px</td>
+                <td>0.7500em</td>
+                <td>75.00%</td>
+            </tr>
+            <tr>
+                <td>13px</td>
+                <td>0.8125em</td>
+                <td>81.25%</td>
+            </tr>
+            <tr>
+                <td>14px</td>
+                <td>0.8750em</td>
+                <td>87.50%</td>
+            </tr>
+            <tr>
+                <td>15px</td>
+                <td>0.9375em</td>
+                <td>93.75%</td>
+            </tr>
+            <tr class="destacado">
+                <td>16px</td>
+                <td>1.0000em</td>
+                <td>100.00%</td>
+            </tr>
+            <tr>
+                <td>17px</td>
+                <td>1.0625em</td>
+                <td>106.25%</td>
+            </tr>
+            <tr>
+                <td>18px</td>
+                <td>1.1250em</td>
+                <td>112.50%</td>
+            </tr>
+            <tr>
+                <td>19px</td>
+                <td>1.1875em</td>
+                <td>118.75%</td>
+            </tr>
+            <tr>
+                <td>20px</td>
+                <td>1.2500em</td>
+                <td>125.00%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <h2 id="otrasAbsolutas">Otras unidades absolutas</h2>
+    <div class="caja">
+        <h3>Centímetros (cm)</h3>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad cm1">Párrafo de 0.3cm</p>
+            <p class="ejemplo-unidad cm2">Párrafo de 0.6cm</p>
+            <p class="ejemplo-unidad cm3">Párrafo de 1cm</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>Milímetros (mm)</h3>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad mm1">Párrafo de 3mm</p>
+            <p class="ejemplo-unidad mm2">Párrafo de 6mm</p>
+            <p class="ejemplo-unidad mm3">Párrafo de 10mm</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>Pulgadas (in)</h3>
+        <h4>1in = 96px = 2.54cm</h4>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad in1">Párrafo de 0.12in</p>
+            <p class="ejemplo-unidad in2">Párrafo de 0.24in</p>
+            <p class="ejemplo-unidad in3">Párrafo de 0.39in</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>Puntos (pt)</h3>
+        <h4>1pt = 1/72 de 1in</h4>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad pt1">Párrafo de 1pt</p>
+            <p class="ejemplo-unidad pt2">Párrafo de 5pt</p>
+            <p class="ejemplo-unidad pt3">Párrafo de 10pt</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>Picas (pc)</h3>
+        <h4>1pc = 12pt</h4>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad pc1">Párrafo de 0.1pc</p>
+            <p class="ejemplo-unidad pc2">Párrafo de 0.5pc</p>
+            <p class="ejemplo-unidad pc3">Párrafo de 1pc</p>
+        </div>
+    </div>
+
+    <h2 id="otrasRelativas">Otras unidades relativas</h2>
+    <div class="caja">
+        <h3>vw</h3>
+        <p>Relativo al 1% del ancho de la la ventana del navegador (viewport)</p>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad vw1">Párrafo de 0.5vw.</p>
+            <p class="ejemplo-unidad vw2">Párrafo de 2vw.</p>
+            <p class="ejemplo-unidad vw3">Párrafo de 5vw.</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>vh</h3>
+        <p>Relativo al 1% del alto de la la ventana del navegador (viewport)</p>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad vh1">Párrafo de 0.5vh.</p>
+            <p class="ejemplo-unidad vh2">Párrafo de 2vh.</p>
+            <p class="ejemplo-unidad vh3">Párrafo de 5vh.</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>vmin</h3>
+        <p>En relación con el 1% de la dimensión más pequeña de la la ventana del navegador (viewport)</p>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad vmin1">Párrafo de 0.5vmin.</p>
+            <p class="ejemplo-unidad vmin2">Párrafo de 2vmin.</p>
+            <p class="ejemplo-unidad vmin3">Párrafo de 5vmin.</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>vmax</h3>
+        <p>En relación con el 1% de la dimensión más grande de la la ventana del navegador (viewport)</p>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad vmax1">Párrafo de 0.5vmax.</p>
+            <p class="ejemplo-unidad vmax2">Párrafo de 2vmax.</p>
+            <p class="ejemplo-unidad vmax3">Párrafo de 5vmax.</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>ch</h3>
+        <p>Relativo al ancho del "0" (cero)</p>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad ch1">Párrafo de 0.5ch.</p>
+            <p class="ejemplo-unidad ch2">Párrafo de 2ch.</p>
+            <p class="ejemplo-unidad ch3">Párrafo de 5ch.</p>
+        </div>
+    </div>
+    <div class="caja">
+        <h3>ex</h3>
+        <p>En relación con la altura x de la fuente actual (rara vez se usa)</p>
+        <div class="ejemplos-unidad">
+            <p class="ejemplo-unidad ex1">Párrafo de 0.5ex.</p>
+            <p class="ejemplo-unidad ex2">Párrafo de 2ex.</p>
+            <p class="ejemplo-unidad ex3">Párrafo de 5ex.</p>
+        </div>
+    </div>
+</body>
+
+</html>

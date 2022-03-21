@@ -1,0 +1,224 @@
+/*
+    No puede aparecer un espacio en blanco entre el número
+    y la unidad. Sin embargo, si el valor es 0, se puede 
+    omitir la unidad. Para algunas propiedades de CSS, se
+    permiten longitudes negativas.
+*/
+
+/* ABSOLUTAS */
+
+/* Píxels */
+
+.px1 {
+    font-size: 1px;
+}
+
+.px2 {
+    font-size: 10px;
+}
+
+.px3 {
+    font-size: 20px;
+}
+
+/* Centímetros (cm) */
+
+.cm1 {
+    font-size: 0.3cm;
+}
+
+.cm2 {
+    font-size: 0.6cm;
+}
+
+.cm3 {
+    font-size: 1cm;
+}
+
+/* Milímetros (mm) */
+
+.mm1 {
+    font-size: 3mm;
+}
+
+.mm2 {
+    font-size: 6mm;
+}
+
+.mm3 {
+    font-size: 10mm;
+}
+
+/* Pulgadas (in) */
+
+.in1 {
+    font-size: 0.12in;
+}
+
+.in2 {
+    font-size: 0.24in;
+}
+
+.in3 {
+    font-size: 0.39in;
+}
+
+/* Puntos (pt) */
+
+.pt1 {
+    font-size: 8pt;
+}
+
+.pt2 {
+    font-size: 16pt;
+}
+
+.pt3 {
+    font-size: 30pt;
+}
+
+/* Picas (pc) */
+
+.pc1 {
+    font-size: 0.66pc;
+}
+
+.pc2 {
+    font-size: 1.33pc;
+}
+
+.pc3 {
+    font-size: 2.5pc;
+}
+
+/* UNIDADES RELATIVAS */
+
+.dif-em-rem {
+    font-size: 24px;
+}
+
+/* em */
+
+.em1 {
+    font-size: 0.7em;
+}
+
+.em2 {
+    font-size: 1em;
+}
+
+.em3 {
+    font-size: 1.3em;
+}
+
+/* rem */
+
+.rem1 {
+    font-size: 0.7rem;
+}
+
+.rem2 {
+    font-size: 1rem;
+}
+
+.rem3 {
+    font-size: 1.3rem;
+}
+
+/* % */
+
+.porc1 {
+    font-size: 70%;
+}
+
+.porc2 {
+    font-size: 100%;
+}
+
+.porc3 {
+    font-size: 130%;
+}
+
+/* vw */
+
+.vw1 {
+    font-size: 0.5vw;
+}
+
+.vw2 {
+    font-size: 2vw;
+}
+
+.vw3 {
+    font-size: 5vw;
+}
+
+/* vh */
+
+.vh1 {
+    font-size: 0.5vh;
+}
+
+.vh2 {
+    font-size: 2vh;
+}
+
+.vh3 {
+    font-size: 5vh;
+}
+
+/* vmin */
+
+.vmin1 {
+    font-size: 0.5vmin;
+}
+
+.vmin2 {
+    font-size: 2vmin;
+}
+
+.vmin3 {
+    font-size: 5vmin;
+}
+
+/* vmax */
+
+.vmax1 {
+    font-size: 0.5vmax;
+}
+
+.vmax2 {
+    font-size: 2vmax;
+}
+
+.vmax3 {
+    font-size: 5vmax;
+}
+
+/* ch */
+
+.ch1 {
+    font-size: 0.5ch;
+}
+
+.ch2 {
+    font-size: 2ch;
+}
+
+.ch3 {
+    font-size: 5ch;
+}
+
+/* ex */
+
+.ex1 {
+    font-size: 0.5ex;
+}
+
+.ex2 {
+    font-size: 2ex;
+}
+
+.ex3 {
+    font-size: 5ex;
+}
