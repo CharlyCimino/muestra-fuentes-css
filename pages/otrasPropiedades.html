@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Otras propiedades para fuentes en CSS</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estiloOtrasPropiedades.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a href="../index.html">Volver atrás</a>
+    <h1>Otras propiedades para fuentes en CSS</h1>
+
+    <p>Info extraída de <a target="_blank" href="https://www.w3schools.com/css/css_font.asp">W3Schools</a></p>
+
+    <ul>
+        <li><a href="#font-variant"><code>font-variant</code></a></li>
+        <li><a href="#letter-spacing"><code>letter-spacing</code></a></li>
+        <li><a href="#white-space"><code>white-space</code></a></li>
+        <li><a href="#word-break"><code>word-break</code></a></li>
+        <li><a href="#line-height"><code>line-height</code></a></li>
+        <li><a href="#font-stretch"><code>font-stretch</code></a></li>
+        <li><a href="#font-variant-caps"><code>font-variant-caps</code></a></li>
+        <li><a href="#font-size-adjust"><code>font-size-adjust</code></a></li>
+        <li><a href="#font-kerning"><code>font-kerning</code></a></li>
+        <li><a href="#font-feature-settings"><code>font-feature-settings</code></a></li>
+    </ul>
+    <hr>
+
+    <h2 id="font-variant"><code>font-variant</code></h2>
+    <p>En una fuente de versalitas, todas las letras minúsculas se convierten en letras mayúsculas. Sin embargo, las
+        letras mayúsculas convertidas aparecen en un tamaño de fuente más pequeño que las letras mayúsculas originales
+        en el texto.</p>
+    <div class="ejemplos">
+        <p class="font-variant-normal">Un párrafo con valor normal (por defecto).</p>
+        <p class="font-variant-small-caps">Un párrafo con valor small-caps (versalitas).</p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_font_font-variant.asp"><code>font-variant</code> en W3Schools</a>
+    </p>
+
+    <h2 id="letter-spacing"><code>letter-spacing</code></h2>
+    <p>Aumenta o disminuye el espacio entre caracteres en un texto.</p>
+    <div class="ejemplos">
+        <p class="letter-spacing-normal">Un párrafo con valor normal (por defecto).</p>
+        <p class="letter-spacing-1">Un párrafo con valor 0.2em</p>
+        <p class="letter-spacing-2">Un párrafo con valor 0.5em</p>
+        <p class="letter-spacing-3">Un párrafo con valor -0.05em</p>
+        <p class="letter-spacing-4">Un párrafo con valor -0.2em</p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_text_letter-spacing.asp"><code>letter-spacing</code> en
+            W3Schools</a></p>
+
+    <h2 id="word-spacing"><code>word-spacing</code></h2>
+    <p>Aumenta o disminuye el espacio entre caracteres en un texto.</p>
+    <div class="ejemplos">
+        <p class="word-spacing-normal">Un párrafo con valor normal (por defecto).</p>
+        <p class="word-spacing-1">Un párrafo con valor 0.3em</p>
+        <p class="word-spacing-2">Un párrafo con valor 0.6em</p>
+        <p class="word-spacing-3">Un párrafo con valor -0.05em</p>
+        <p class="word-spacing-4">Un párrafo con valor -0.2em</p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_text_word-spacing.asp"><code>word-spacing</code> en
+            W3Schools</a></p>
+
+    <h2 id="white-space"><code>white-space</code></h2>
+    <p>Aumenta o disminuye el espacio entre caracteres en un texto.</p>
+    <div class="ejemplos">
+        <p class="white-space-normal">Un párrafo con valor <code>normal</code> (por defecto). Las secuencias de espacios
+            en blanco colapsarán en un solo espacio en blanco. El texto se ajustará cuando sea necesario.</p>
+        <p class="white-space-nowrap">Un párrafo con valor <code>nowrap</code>. Las secuencias de espacios en blanco
+            colapsarán en un solo espacio en blanco. El texto nunca pasará a la siguiente línea. El texto continúa en la
+            misma línea hasta que se encuentra una etiqueta <code>&lt;br&gt;</code></p>
+        <p class="white-space-pre">Un párrafo con valor <code>pre</code>. El navegador conserva los espacios en blanco.
+            El texto solo se ajustará en los saltos de línea. Actúa como la etiqueta <code>&lt;pre&gt;</code> en HTML.
+        </p>
+        <p class="white-space-pre-line">Un párrafo con valor <code>pre-line</code>. Las secuencias de espacios en blanco
+            colapsarán en un solo espacio en blanco. El texto se ajustará cuando sea necesario y en los saltos de línea.
+        </p>
+        <p class="white-space-pre-wrap">Un párrafo con valor <code>pre-wrap</code>. El navegador conserva los espacios
+            en blanco. El texto se ajustará cuando sea necesario y en los saltos de línea.</p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_text_white-space.asp"><code>white-space</code> en W3Schools</a>
+    </p>
+
+    <h2 id="word-break"><code>word-break</code></h2>
+    <p>Especifica cómo deben dividirse las palabras al llegar al final de una línea.</p>
+    <div class="ejemplos">
+        <p class="word-break-normal">Un párrafo con valor <code>normal</code> (por defecto). Utiliza reglas de salto de
+            línea predeterminadas.</p>
+        <p class="word-break-break-all">Un párrafo con valor <code>break-all</code>. Para evitar el desbordamiento, la
+            palabra puede dividirse en cualquier carácter.</p>
+        <p class="word-break-keep-all">Los saltos de palabra no deben usarse para texto en chino/japonés/coreano (CJK).
+            El comportamiento del texto que no es CJK es el mismo que el valor "normal".</p>
+        <p class="word-break-break-word">Un párrafo con valor <code>break-word</code>. Para evitar el desbordamiento, la
+            palabra puede dividirse en puntos arbitrarios.
+        </p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_text_word-break.asp"><code>word-break</code> en W3Schools</a>
+    </p>
+
+    <h2 id="word-wrap"><code>word-wrap</code></h2>
+    <p>Permite que las palabras largas se puedan dividir y pasar a la siguiente línea.</p>
+    <div class="ejemplos">
+        <p class="word-wrap-normal">Un párrafo con valor <code>normal</code> (por defecto). Rompe las palabras solo en
+            los puntos de ruptura permitidos.</p>
+        <p class="word-wrap-break-word">Un párrafo con valor <code>break-word</code>. Permite romper palabras
+            <em>irrompibles</em>.</p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_text_word-wrap.asp"><code>word-wrap</code> en W3Schools</a>
+    </p>
+
+    <h2 id="text-overflow"><code>text-overflow</code></h2>
+    <p>Especifica cómo se debe señalar al usuario el contenido desbordado que no se muestra. Se puede recortar, mostrar
+        puntos suspensivos (...) o mostrar una cadena personalizada.</p>
+    <p>Las dos propiedades siguientes son necesarias para el desbordamiento de texto:</p>
+    <pre>
+        white-space: nowrap;
+        overflow: hidden;
+    </pre>
+    <div class="ejemplos text-overflow-ejemplo">
+        <p class="text-overflow-clip">Un párrafo con valor <code>clip</code> (por defecto). El texto está recortado y no es accesible.</p>
+        <p class="text-overflow-ellipsis">Un párrafo con valor <code>ellipsis</code>. Muestra puntos suspensivos ("...") para representar el texto recortado</p>
+        <p class="text-overflow-cortado">Un párrafo con valor <code>"**"</code>. Muestra la cadena dada para representar el texto recortado. (Solo funciona en Firefox)</p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_text_text-overflow.asp"><code>text-overflow</code> en
+            W3Schools</a>
+    </p>
+
+    <h2 id="direction"><code>direction</code></h2>
+    <p>Especifica la dirección del texto/dirección de escritura dentro de un elemento a nivel de bloque.</p>
+    <div class="ejemplos">
+        <p class="direction-ltr">Un párrafo con valor <code>ltr</code> (por defecto).</p>
+        <p class="direction-rtl">Un párrafo con valor <code>rtl</code>.</p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/pr_text_direction.asp"><code>direction</code> en W3Schools</a>
+    </p>
+
+    <h2 id="writing-mode"><code>writing-mode</code></h2>
+    <p>Especifica si las líneas de texto se disponen horizontal o verticalmente.</p>
+    <div class="ejemplos">
+        <p class="writing-mode-horizontal-tb">Un párrafo con valor <code>horizontal-tb</code> (por defecto). Deja que el
+            contenido fluya horizontalmente de izquierda a derecha, verticalmente de arriba a abajo</p>
+        <p class="writing-mode-vertical-rl">Un párrafo con valor <code>vertical-rl</code><br>Deja que el contenido fluya
+            verticalmente<br>de arriba a abajo, horizontalmente de derecha<br> a izquierda.</p>
+        <br>
+        <p class="writing-mode-vertical-lr">Un párrafo con valor <code>vertical-lr</code>.<br>Deja que el contenido
+            fluya verticalmente<br>de arriba a abajo, horizontalmente de izquierda<br> a derecha.</p>
+        </p>
+    </div>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/cssref/css3_pr_writing-mode.asp"><code>writing-mode</code> en W3Schools</a>
+    </p>
+
+    <h2 id="line-height"><code>line-height</code></h2>
+    <p>Especifica la altura de una línea.</p>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/csSref/pr_dim_line-height.asp"><code>line-height</code> en W3Schools</a></p>
+
+    <h2 id="font-stretch"><code>font-stretch</code></h2>
+    <p>Le permite hacer que el texto sea más angosto (condensado) o más ancho (expandido). ¡Esta propiedad no tiene
+        efecto si la fuente seleccionada no ofrece caras condensadas o expandidas!</p>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/csSref/css3_pr_font-stretch.asp"><code>font-stretch</code> en W3Schools</a>
+    </p>
+
+    <h2 id="font-variant-caps"><code>font-variant-caps</code></h2>
+    <p>Controla el uso de glifos alternativos para letras mayúsculas en forma de versalitas.</p>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/csSref/css3_pr_font-variant-caps.asp"><code>font-variant-caps</code> en
+            W3Schools</a></p>
+
+    <h2 id="font-size-adjust"><code>font-size-adjust</code></h2>
+    <p>Le brinda un mejor control del tamaño de la fuente cuando la primera fuente seleccionada no está disponible.
+        Cuando una fuente no está disponible, el navegador usa la segunda fuente especificada. Esto podría resultar en
+        un gran cambio para el tamaño de fuente. Para evitar esto, utilice la propiedad <code>font-size-adjust</code>.
+    </p>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/csSref/css3_pr_font-size-adjust.asp"><code>font-size-adjust</code> en
+            W3Schools</a></p>
+
+    <h2 id="font-kerning"><code>font-kerning</code></h2>
+    <p>Controla el uso de la información de interletrado almacenada en una fuente. Para las fuentes que no incluyen
+        datos de interletrado, esta propiedad no tendrá ningún efecto visible.</p>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/csSref/css3_pr_font-kerning.asp"><code>font-kerning</code> en W3Schools</a>
+    </p>
+
+    <h2 id="font-feature-settings"><code>font-feature-settings</code></h2>
+    <p>Permite el control sobre características tipográficas avanzadas en fuentes OpenType.</p>
+    <p>Ver más sobre <a target="_blank"
+            href="https://www.w3schools.com/csSref/css3_pr_font-feature-settings.asp"><code>font-feature-settings</code>
+            en W3Schools</a></p>
+
+</body>
+
+</html>

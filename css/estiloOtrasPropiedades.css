@@ -1,0 +1,107 @@
+.font-variant-normal {
+    font-variant: normal;
+}
+.font-variant-small-caps {
+    font-variant: small-caps;
+}
+
+.letter-spacing-normal {
+    letter-spacing: normal;
+}
+.letter-spacing-1 {
+    letter-spacing: 0.2em;
+}
+.letter-spacing-2 {
+    letter-spacing: 0.5em;
+}
+.letter-spacing-3 {
+    letter-spacing: -0.05em;
+}
+.letter-spacing-4 {
+    letter-spacing: -0.2em;
+}
+
+.word-spacing-normal {
+    word-spacing: normal;
+}
+.word-spacing-1 {
+    word-spacing: 0.3em;
+}
+.word-spacing-2 {
+    word-spacing: 0.6em;
+}
+.word-spacing-3 {
+    word-spacing: -0.05em;
+}
+.word-spacing-4 {
+    word-spacing: -0.2em;
+}
+
+.white-space-normal {
+    white-space: normal;
+}
+.white-space-nowrap {
+    white-space: nowrap;
+}
+.white-space-pre {
+    white-space: pre;
+}
+.white-space-pre-line {
+    white-space: pre-line;
+}
+.white-space-pre-wrap {
+    white-space: pre-wrap;
+}
+
+.word-break-normal {
+    word-break: normal;
+}
+.word-break-break-all {
+    word-break: break-all;
+}
+.word-break-keep-all {
+    word-break: keep-all;
+}
+.word-break-break-word {
+    word-break: break-word;
+}
+
+.word-wrap-normal {
+    word-wrap: normal;
+}
+.word-wrap-break-word {
+    word-wrap: break-word;
+}
+
+.writing-mode-horizontal-tb{
+    writing-mode: horizontal-tb;
+}
+.writing-mode-vertical-rl{
+    writing-mode: vertical-rl;
+}
+.writing-mode-vertical-lr{
+    writing-mode: vertical-lr;
+}
+
+
+.text-overflow-ejemplo p {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-overflow-clip {
+    text-overflow: clip;
+}
+.text-overflow-ellipsis {
+    text-overflow: ellipsis;
+}
+.text-overflow-cortado {
+    text-overflow: "**";
+}
+
+.direction-ltr {
+    direction: ltr;
+}
+.direction-rtl {
+    direction: rtl;
+}

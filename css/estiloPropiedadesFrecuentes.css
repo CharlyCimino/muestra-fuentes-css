@@ -1,0 +1,269 @@
+.caja h3 {
+    margin: 0;
+    background-color: #5091b2;
+    color: white;
+    padding: 0.3em;
+    font-size: 1.1em;
+}
+
+.font-weigth {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-weigth-lighter {
+    font-weight: lighter;
+}
+
+.font-weigth-100 {
+    font-weight: 100;
+}
+
+.font-weigth-200 {
+    font-weight: 200;
+}
+
+.font-weigth-300 {
+    font-weight: 300;
+}
+
+.font-weigth-normal {
+    font-weight: normal;
+}
+
+.font-weigth-500 {
+    font-weight: 500;
+}
+
+.font-weigth-600 {
+    font-weight: 600;
+}
+
+.font-weigth-bold {
+    font-weight: bold;
+}
+
+.font-weigth-800 {
+    font-weight: 800;
+}
+
+.font-weigth-900 {
+    font-weight: 900;
+}
+
+.font-weigth-bolder {
+    font-weight: bolder;
+}
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-style-oblique {
+    font-style: oblique;
+}
+
+.text-decoration-line-none{
+    text-decoration-line: none;
+}
+.text-decoration-line-underline{
+    text-decoration-line: underline;
+}
+.text-decoration-line-overline{
+    text-decoration-line: overline;
+}
+.text-decoration-line-line-through{
+    text-decoration-line: line-through;
+}
+
+.text-decoration-style-solid {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+.text-decoration-style-double {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+.text-decoration-style-dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+.text-decoration-style-dashed {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+.text-decoration-style-wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.text-decoration-thickness-1 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.01em;
+}
+.text-decoration-thickness-2 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.1em;
+}
+.text-decoration-thickness-3 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.2em;
+}
+
+.text-decoration-color-red {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+.text-decoration-color-blue {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0,0,255);
+}
+.text-decoration-color-green {
+    text-decoration-line: underline;
+    text-decoration-color: #00ff00;
+}
+
+.text-transform-none {
+    text-transform: none;
+}
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+.text-transform-lowercase {
+    text-transform: lowercase;
+}
+.text-transform-capitalize {
+    text-transform: capitalize;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+.text-indent-1{
+    text-indent: 0.5em;
+}
+.text-indent-2{
+    text-indent: 2em;
+}
+.text-indent-3{
+    text-indent: -0.5em;
+}
+.text-indent-4{
+    text-indent: -2em;
+}
+
+.text-shadow-1 {
+    text-shadow: 2px 2px 8px red;
+}
+
+.text-shadow-2 {
+    text-shadow: 0 0 3px red;
+}
+
+.text-shadow-3 {
+    text-shadow: 0 0 3px red, 0 0 5px blue;
+}
+
+.list-style-type-disc {
+    list-style-type: disc;
+}
+.list-style-type-circle {
+    list-style-type: circle;
+}
+.list-style-type-square {
+    list-style-type: square;
+}
+.list-style-type-armenian {
+    list-style-type: armenian;
+}
+.list-style-type-none {
+    list-style-type: none;
+}
+.list-style-type-decimal {
+    list-style-type: decimal;
+}
+.list-style-type-decimal-leading-zero {
+    list-style-type: decimal-leading-zero;
+}
+.list-style-type-lower-alpha {
+    list-style-type: lower-alpha;
+}
+.list-style-type-upper-alpha {
+    list-style-type: upper-alpha;
+}
+.list-style-type-lower-greek {
+    list-style-type: lower-greek;
+}
+.list-style-type-lower-latin {
+    list-style-type: lower-latin;
+}
+.list-style-type-upper-latin {
+    list-style-type: upper-latin;
+}
+.list-style-type-lower-roman {
+    list-style-type: lower-roman;
+}
+.list-style-type-upper-roman {
+    list-style-type: upper-roman;
+}
+.list-style-type-cjk-ideographic {
+    list-style-type: cjk-ideographic;
+}
+.list-style-type-georgian {
+    list-style-type: georgian;
+}
+.list-style-type-hebrew {
+    list-style-type: hebrew;
+}
+.list-style-type-hiragana {
+    list-style-type: hiragana;
+}
+.list-style-type-hiragana-iroha {
+    list-style-type: hiragana-iroha;
+}
+.list-style-type-katakana {
+    list-style-type: katakana;
+}
+.list-style-type-katakana-iroha {
+    list-style-type: katakana-iroha;
+}
+
+.list-style-position-outside {
+    list-style-position: outside;
+}
+.list-style-position-inside {
+    list-style-position: inside;
+}
+
+.list-style-position-outside li {
+    border: 1px solid black;
+}
+.list-style-position-inside  li {
+    border: 1px solid black;
+}
+
+.list-style-image-1 {
+    list-style-image: url("https://loremflickr.com/20/20");
+}
+.list-style-image-2 {
+    list-style-image: url("https://loremflickr.com/50/50");
+}
+
+
