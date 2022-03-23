@@ -35,21 +35,21 @@
     <ul>
         <li>Establece el texto en un tamaño especificado.</li>
         <li>No permite que un usuario cambie el tamaño del texto en todos los navegadores (malo por razones de
-            accesibilidad)</li>
-        <li>El tamaño absoluto es útil cuando se conoce el tamaño físico de la salida</li>
+            accesibilidad).</li>
+        <li>El tamaño absoluto es útil cuando se conoce el tamaño físico de la salida.</li>
     </ul>
 
     <div class="caja">
-        <h3>px (Pixel)</h3>
+        <h3>Píxel (<code>px</code>)</h3>
         <h4>1px = 1/96 de 1in</h4>
         <p>Los píxeles (<code>px</code>) son relativos al dispositivo de visualización. Para dispositivos de bajo dpi,
             1px es un píxel de dispositivo (punto) de la pantalla. Para impresoras y pantallas de alta resolución, 1px
             implica múltiples píxeles del dispositivo.</p>
         <p>Ajustar el tamaño del texto con píxeles le da un control total sobre el tamaño del texto.</p>
         <div class="ejemplos">
-            <p class="ejemplo-unidad px1">Párrafo de 1px</p>
-            <p class="ejemplo-unidad px2">Párrafo de 10px</p>
-            <p class="ejemplo-unidad px3">Párrafo de 20px</p>
+            <p class="ejemplo-unidad px1">Párrafo de 10px</p>
+            <p class="ejemplo-unidad px2">Párrafo de 20px</p>
+            <p class="ejemplo-unidad px3">Párrafo de 30px</p>
         </div>
     </div>
 
@@ -63,12 +63,12 @@
     </ul>
 
     <div class="caja">
-        <h3>em</h3>
+        <h3><code>em</code></h3>
         <p>Para permitir a los usuarios cambiar el tamaño del texto (en el menú del navegador), muchos desarrolladores
-            usan em en lugar de píxeles.</p>
+            usan <code>em</code> en lugar de píxeles.</p>
         <p>1em es igual al tamaño de fuente actual. El tamaño de texto predeterminado en los navegadores es 16px.
             Entonces, el tamaño predeterminado de 1em es 16px.</p>
-        <p>El tamaño se puede calcular de píxeles a <code>em</code> usando esta fórmula: <code>pixels/16=em</code></p>
+        <p>El tamaño se puede calcular de <code>px</code> a <code>em</code> usando esta fórmula: <code>px / 16 = em</code></p>
         <div class="ejemplos dif-em-rem">
             <p class="ejemplo-unidad em1">Párrafo de 0.7em</p>
             <p class="ejemplo-unidad em2">Párrafo de 1em</p>
@@ -76,8 +76,8 @@
         </div>
     </div>
     <div class="caja">
-        <h3>rem</h3>
-        <p>Relativo al tamaño de fuente del elemento raíz (<code>&lt;html&gt;</code>).
+        <h3><code>rem</code></h3>
+        <p>Relativo al tamaño de fuente del elemento raíz <code>&lt;html&gt;</code>.
         </p>
         <div class="ejemplos dif-em-rem">
             <p class="ejemplo-unidad rem1">Párrafo de 0.7rem</p>
@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>%</h3>
+        <h3><code>%</code></h3>
         <p>Relativo al elemento padre.</p>
         <div class="ejemplos dif-em-rem">
             <p class="ejemplo-unidad porc1">Párrafo de 70% del tamaño de fuente del elemento padre.</p>
@@ -185,7 +185,7 @@
     
     <h2 id="otrasAbsolutas">Otras unidades absolutas</h2>
     <div class="caja">
-        <h3>Centímetros (cm)</h3>
+        <h3>Centímetros (<code>cm</code>)</h3>
         <div class="ejemplos">
             <p class="ejemplo-unidad cm1">Párrafo de 0.3cm</p>
             <p class="ejemplo-unidad cm2">Párrafo de 0.6cm</p>
@@ -193,7 +193,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>Milímetros (mm)</h3>
+        <h3>Milímetros (<code>mm</code>)</h3>
         <div class="ejemplos">
             <p class="ejemplo-unidad mm1">Párrafo de 3mm</p>
             <p class="ejemplo-unidad mm2">Párrafo de 6mm</p>
@@ -201,7 +201,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>Pulgadas (in)</h3>
+        <h3>Pulgadas (<code>in</code>)</h3>
         <h4>1in = 96px = 2.54cm</h4>
         <div class="ejemplos">
             <p class="ejemplo-unidad in1">Párrafo de 0.12in</p>
@@ -210,7 +210,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>Puntos (pt)</h3>
+        <h3>Puntos (<code>pt</code>)</h3>
         <h4>1pt = 1/72 de 1in</h4>
         <div class="ejemplos">
             <p class="ejemplo-unidad pt1">Párrafo de 1pt</p>
@@ -219,7 +219,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>Picas (pc)</h3>
+        <h3>Picas (<code>pc</code>)</h3>
         <h4>1pc = 12pt</h4>
         <div class="ejemplos">
             <p class="ejemplo-unidad pc1">Párrafo de 0.1pc</p>
@@ -230,7 +230,7 @@
 
     <h2 id="otrasRelativas">Otras unidades relativas</h2>
     <div class="caja">
-        <h3>vw</h3>
+        <h3><code>vw</code></h3>
         <p>Relativo al 1% del ancho de la la ventana del navegador (viewport)</p>
         <div class="ejemplos">
             <p class="ejemplo-unidad vw1">Párrafo de 0.5vw.</p>
@@ -239,7 +239,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>vh</h3>
+        <h3><code>vh</code></h3>
         <p>Relativo al 1% del alto de la la ventana del navegador (viewport)</p>
         <div class="ejemplos">
             <p class="ejemplo-unidad vh1">Párrafo de 0.5vh.</p>
@@ -248,7 +248,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>vmin</h3>
+        <h3><code>vmin</code></h3>
         <p>En relación con el 1% de la dimensión más pequeña de la la ventana del navegador (viewport)</p>
         <div class="ejemplos">
             <p class="ejemplo-unidad vmin1">Párrafo de 0.5vmin.</p>
@@ -257,7 +257,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>vmax</h3>
+        <h3><code>vmax</code></h3>
         <p>En relación con el 1% de la dimensión más grande de la la ventana del navegador (viewport)</p>
         <div class="ejemplos">
             <p class="ejemplo-unidad vmax1">Párrafo de 0.5vmax.</p>
@@ -266,7 +266,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>ch</h3>
+        <h3><code>ch</code></h3>
         <p>Relativo al ancho del "0" (cero)</p>
         <div class="ejemplos">
             <p class="ejemplo-unidad ch1">Párrafo de 0.5ch.</p>
@@ -275,7 +275,7 @@
         </div>
     </div>
     <div class="caja">
-        <h3>ex</h3>
+        <h3><code>ex</code></h3>
         <p>En relación con la altura x de la fuente actual (rara vez se usa)</p>
         <div class="ejemplos">
             <p class="ejemplo-unidad ex1">Párrafo de 0.5ex.</p>

@@ -126,6 +126,16 @@
     text-decoration-color: #00ff00;
 }
 
+.text-decoration-1 {
+    text-decoration: underline red wavy 0.1em;
+}
+.text-decoration-2 {
+    text-decoration: overline #00ff00 dotted 0.08em;
+}
+.text-decoration-3 {
+    text-decoration: line-through rgba(0,0,255,0.3) double 0.2em;
+}
+
 .text-transform-none {
     text-transform: none;
 }

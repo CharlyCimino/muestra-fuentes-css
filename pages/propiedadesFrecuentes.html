@@ -19,6 +19,29 @@
     <ul>
         <li><a href="#font-weight"><code>font-weight</code></a></li>
         <li><a href="#font-style"><code>font-style</code></a></li>
+        <li><a href="#text-align"><code>text-align</code></a></li>
+        <li><a href="#text-transform"><code>text-transform</code></a></li>
+        <li><a href="#text-decoration"><code>text-decoration</code></a></li>
+        <ul>
+            <li><a href="#text-decoration-line"><code>text-decoration-line</code></a>
+            </li>
+            <li><a href="#text-decoration-color"><code>text-decoration-color</code></a>
+            </li>
+            <li><a href="#text-decoration-style"><code>text-decoration-style</code></a>
+            </li>
+            <li><a href="#text-decoration-thickness"><code>text-decoration-thickness</code></a>
+            </li>
+            <li><a href="#text-decoration-combinaciones">Combinaciones con <code>text-decoration</code></a>
+            </li>
+        </ul>
+        <li><a href="#text-indent"><code>text-indent</code></a></li>
+        <li><a href="#text-shadow"><code>text-shadow</code></a></li>
+        <li><a href="#list-style"><code>list-style</code></a></li>
+        <ul>
+            <li><a href="#list-style-type"><code>list-style-type</code></a></li>
+            <li><a href="#list-style-position"><code>list-style-position</code></a></li>
+            <li><a href="#list-style-image"><code>list-style-image</code></a></li>
+        </ul>
     </ul>
     <hr>
 
@@ -85,13 +108,13 @@
                 tenga el mismo ancho (como en periódicos y revistas).</p>
         </div>
         <p>Ver más sobre <a target="_blank"
-                href="https://www.w3schools.com/cssref/pr_font_text-align.asp"><code>text-align</code> en W3Schools</a>
+                href="https://www.w3schools.com/cssref/pr_text_text-align.asp"><code>text-align</code> en W3Schools</a>
         </p>
     </div>
 
     <div class="caja">
         <h2 id="text-transform"><code>text-transform</code></h2>
-        <p>Especifica la alineación horizontal del texto en un elemento.</p>
+        <p>Controla las mayúsculas del texto.</p>
         <div class="ejemplos">
             <p class="text-transform-none">Un párrafo con <code>text-transform</code> en valor <code>none</code> (por
                 defecto). El texto se representa tal
@@ -108,7 +131,7 @@
             </p>
             <p class="text-transform-capitalize">Un párrafo con <code>text-transform</code> en valor
                 <code>capitalize</code>. Transforma el primer carácter
-                de cada palabra a mayúscula</p>
+                de cada palabra a mayúscula.</p>
         </div>
         <p>Ver más sobre <a target="_blank"
                 href="https://www.w3schools.com/cssref/pr_text_text-transform.asp"><code>text-transform</code> en
@@ -117,35 +140,18 @@
 
     <div class="caja">
         <h2 id="text-decoration"><code>text-decoration</code></h2>
-        <p>Especifica la decoración añadida al texto, y es una propiedad abreviada para:</p>
-        <ul>
-            <li><code>text-decoration-line</code> (Requerido): Establece el tipo de decoración de texto que se
-                utilizará.
-            </li>
-            <li><code>text-decoration-color</code>: Establece el color de la decoración del texto.</li>
-            <li><code>text-decoration-style</code>: Establece el estilo de la decoración del texto.</li>
-            <li><code>text-decoration-thickness</code>: Establece el grosor de la línea de decoración.</li>
-        </ul>
-        <p>Las siguientes declaraciones:</p>
-        <pre>
-            text-decoration-line: underline;
-            text-decoration-color: red;
-            text-decoration-style: wavy;
-            text-decoration-thickness: 1em;</pre>
-        <p>pueden abreviarse utilizando la propiedad <code>text-decoration</code>:</p>
-        <pre>
-            text-decoration: underline red wavy 1em;</pre>
-        <p>Ver más sobre <a target="_blank"
-                href="https://www.w3schools.com/cssref/pr_text_text-decoration.asp"><code>text-decoration</code>
-                en
-                W3Schools</a></p>
+        <p>Especifica la decoración añadida al texto. Es una propiedad abreviada para las siguientes propiedades:</p>
         <h3><code>text-decoration-line</code></h3>
-        <p>Establece el tipo de decoración de texto que se utilizará</p>
+        <p>Establece el tipo de decoración de texto que se utilizará.</p>
         <div class="ejemplos">
-            <p class="text-decoration-line-none">Un párrafo con valor <code>none</code> (por defecto).</p>
-            <p class="text-decoration-line-underline">Un párrafo con valor <code>underline</code>.</p>
-            <p class="text-decoration-line-overline">Un párrafo con valor <code>overline</code>.</p>
-            <p class="text-decoration-line-line-through">Un párrafo con valor <code>line-through</code></p>
+            <p class="text-decoration-line-none">Un párrafo con <code>text-decoration-line</code> en valor
+                <code>none</code> (por defecto).</p>
+            <p class="text-decoration-line-underline">Un párrafo con <code>text-decoration-line</code> en valor
+                <code>underline</code>.</p>
+            <p class="text-decoration-line-overline">Un párrafo con <code>text-decoration-line</code> en valor
+                <code>overline</code>.</p>
+            <p class="text-decoration-line-line-through">Un párrafo con <code>text-decoration-line</code> en valor
+                <code>line-through</code></p>
         </div>
         <p>Ver más sobre <a target="_blank"
                 href="https://www.w3schools.com/cssref/css3_pr_text-decoration-line.asp"><code>text-decoration-line</code>
@@ -162,11 +168,11 @@
                 <code>text-decoration-color</code> en <code>#00ff00</code></p>
         </div>
         <p>Ver más sobre <a target="_blank"
-                href="https://www.w3schools.com/cssref/pr_text_text-decoration-color.asp"><code>text-decoration-color</code>
+                href="https://www.w3schools.com/cssref/css3_pr_text-decoration-color.asp"><code>text-decoration-color</code>
                 en
                 W3Schools</a></p>
         <h3><code>text-decoration-style</code></h3>
-        <p>Establece el tipo de decoración de texto que se utilizará.</p>
+        <p>Establece el estilo de la decoración del texto.</p>
         <div class="ejemplos">
             <p class="text-decoration-style-solid">Un párrafo con <code>text-decoration-style</code> en valor
                 <code>solid</code> (por defecto). La línea se
@@ -201,6 +207,30 @@
                 href="https://www.w3schools.com/cssref/pr_text_text-decoration-thickness.asp"><code>text-decoration-thickness</code>
                 en
                 W3Schools</a></p>
+        <h3>Combinaciones con <code>text-decoration</code></h3>
+        <p>Las siguientes declaraciones:</p>
+        <div class="codigo">
+            <p>text-decoration-line: underline;</p>
+            <p>text-decoration-color: red;</p>
+            <p>text-decoration-style: wavy;</p>
+            <p>text-decoration-thickness: 1em;</p>
+        </div>
+        <p>pueden abreviarse utilizando la propiedad <code>text-decoration</code>:</p>
+        <div class="codigo">
+            <p>text-decoration: underline red wavy 1em;</p>
+        </div>
+        <div class="ejemplos">
+            <p class="text-decoration-1">Un párrafo con <code>text-decoration</code> en valores <code>underline red wavy
+                    1em</code> </p>
+            <p class="text-decoration-2">Un párrafo con <code>text-decoration</code> en valores <code>overline #00ff00
+                    dotted 0.08em</code> </p>
+            <p class="text-decoration-3">Un párrafo con <code>text-decoration</code> en valores <code>line-through
+                    rgba(0,0,255,0.3) double 0.2em</code> </p>
+        </div>
+        <p>Ver más sobre <a target="_blank"
+                href="https://www.w3schools.com/cssref/pr_text_text-decoration.asp"><code>text-decoration</code>
+                en
+                W3Schools</a></p>
     </div>
 
     <div class="caja">
@@ -223,13 +253,16 @@
         <p>Agrega sombra al texto. Esta propiedad acepta una lista de sombras separadas por comas que se aplicarán al
             texto.
         </p>
-        <pre>
-        text-shadow: h-shadow v-shadow blur-radius color;</pre>
+        <div class="codigo">
+            <p>text-shadow: h-shadow v-shadow blur-radius color;</p>
+        </div>
         <ul>
-            <li>h-shadow: Obligatorio. La posición de la sombra horizontal. Se permiten valores negativos</li>
-            <li>v-shadow: Obligatorio. La posición de la sombra vertical. Se permiten valores negativos</li>
-            <li>blur-radius: Opcional. El radio de desenfoque. El valor predeterminado es 0</li>
-            <li>color: Opcional. El color de la sombra.</li>
+            <li><code>h-shadow</code>: Obligatorio. La posición de la sombra horizontal. Se permiten valores negativos
+            </li>
+            <li><code>v-shadow</code>: Obligatorio. La posición de la sombra vertical. Se permiten valores negativos
+            </li>
+            <li><code>blur-radius</code>: Opcional. El radio de desenfoque. El valor predeterminado es 0</li>
+            <li><code>color</code>: Opcional. El color de la sombra.</li>
         </ul>
         <div class="ejemplos">
             <p class="text-shadow-1">Un párrafo con <code>text-shadow</code> en valores <code>2px 2px 8px red;</code>
@@ -254,13 +287,16 @@
             </ul>
             <p>Si falta uno de los valores, se utilizará el valor predeterminado para esa propiedad.</p>
             <p>Las siguientes declaraciones:</p>
-            <pre>
-                list-style-type: disc;
-                list-style-position: outside;
-                list-style-image: none;</pre>
+            <div class="codigo">
+                <p>list-style-type: disc;</p>
+                <p>list-style-position: outside;</p>
+                <p>list-style-image: none;</p>
+            </div>
             <p>pueden abreviarse utilizando la propiedad <code>list-style</code>:</p>
-            <pre>
-                list-style: disc outside none;</pre>
+
+            <div class="codigo">
+                <p>list-style: disc outside none;</p>
+            </div>
             <p>Ver más sobre <a target="_blank"
                     href="https://www.w3schools.com/cssref/pr_list-style.asp"><code>list-style</code>
                     en
@@ -295,11 +331,11 @@
                 </ul>
                 <ul class="list-style-type-decimal-leading-zero">
                     <li>Ítem de lista con <code>font-style-type</code>
-en valor                         <code>decimal-leading-zero</code></li>
+                        en valor <code>decimal-leading-zero</code></li>
                     <li>Ítem de lista con <code>font-style-type</code>
-en valor                         <code>decimal-leading-zero</code></li>
+                        en valor <code>decimal-leading-zero</code></li>
                     <li>Ítem de lista con <code>font-style-type</code>
-en valor                         <code>decimal-leading-zero</code></li>
+                        en valor <code>decimal-leading-zero</code></li>
                 </ul>
                 <ul class="list-style-type-lower-alpha">
                     <li>Ítem de lista con <code>font-style-type</code> en valor <code>lower-alpha</code></li>
@@ -388,13 +424,15 @@ en valor                         <code>decimal-leading-zero</code></li>
                     <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code></li>
                     <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code></li>
                     <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code></li>
-                    <p>Significa que las viñetas estarán fuera del elemento de la lista. El inicio de cada línea de un elemento de la lista se alineará verticalmente.</p>
+                    <p>Significa que las viñetas estarán fuera del elemento de la lista. El inicio de cada línea de un
+                        elemento de la lista se alineará verticalmente.</p>
                 </ul>
                 <ul class="list-style-position-inside">
                     <li>Ítem de lista con <code>list-style-position</code> en valor <code>inside</code></li>
                     <li>Ítem de lista con <code>list-style-position</code> en valor <code>inside</code></li>
                     <li>Ítem de lista con <code>list-style-position</code> en valor <code>inside</code></li>
-                    <p>Significa que las viñetas estarán dentro del elemento de la lista. Como es parte del elemento de la lista, será parte del texto y empujará el texto al principio.</p>
+                    <p>Significa que las viñetas estarán dentro del elemento de la lista. Como es parte del elemento de
+                        la lista, será parte del texto y empujará el texto al principio.</p>
                 </ul>
             </div>
             <p>Ver más sobre <a target="_blank"
@@ -405,17 +443,23 @@ en valor                         <code>decimal-leading-zero</code></li>
             <p>Eeemplaza la viñeta de un elemento de lista con una imagen.</p>
             <div class="ejemplos">
                 <ul class="list-style-image-1">
-                    <li>Ítem de lista con <code>list-style-image</code> en valor <code>url("https://loremflickr.com/20/20")</code></li>
-                    <li>Ítem de lista con <code>list-style-image</code> en valor <code>url("https://loremflickr.com/20/20")</code></li>
-                    <li>Ítem de lista con <code>list-style-image</code> en valor <code>url("https://loremflickr.com/20/20")</code></li>
+                    <li>Ítem de lista con <code>list-style-image</code> en valor
+                        <code>url("https://loremflickr.com/20/20")</code></li>
+                    <li>Ítem de lista con <code>list-style-image</code> en valor
+                        <code>url("https://loremflickr.com/20/20")</code></li>
+                    <li>Ítem de lista con <code>list-style-image</code> en valor
+                        <code>url("https://loremflickr.com/20/20")</code></li>
                 </ul>
                 <ul class="list-style-image-2">
-                    <li>Ítem de lista con <code>list-style-image</code> en valor <code>url("https://loremflickr.com/50/50")</code></li>
-                    <li>Ítem de lista con <code>list-style-image</code> en valor <code>url("https://loremflickr.com/50/50")</code></li>
-                    <li>Ítem de lista con <code>list-style-image</code> en valor <code>url("https://loremflickr.com/50/50")</code></li>
+                    <li>Ítem de lista con <code>list-style-image</code> en valor
+                        <code>url("https://loremflickr.com/50/50")</code></li>
+                    <li>Ítem de lista con <code>list-style-image</code> en valor
+                        <code>url("https://loremflickr.com/50/50")</code></li>
+                    <li>Ítem de lista con <code>list-style-image</code> en valor
+                        <code>url("https://loremflickr.com/50/50")</code></li>
             </div>
             <p>Ver más sobre <a target="_blank"
-                    href="https://www.w3schools.com/cssref/pr_list-style-image.asp"><code>list-image</code>
+                    href="https://www.w3schools.com/cssref/pr_list-style-image.asp"><code>list-style-image</code>
                     en
                     W3Schools</a></p>
         </div>
