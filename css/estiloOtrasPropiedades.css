@@ -105,3 +105,13 @@
 .direction-rtl {
     direction: rtl;
 }
+
+.line-height-1 {
+    line-height: -0.5em;
+}
+.line-height-2 {
+    line-height: 1em;
+}
+.line-height-3 {
+    line-height: 3em;
+}

@@ -41,6 +41,8 @@
             <li><a href="#list-style-type"><code>list-style-type</code></a></li>
             <li><a href="#list-style-position"><code>list-style-position</code></a></li>
             <li><a href="#list-style-image"><code>list-style-image</code></a></li>
+            <li><a href="#list-style-combinaciones">Combinaciones con <code>list-style</code></a>
+            </li>
         </ul>
     </ul>
     <hr>
@@ -141,7 +143,7 @@
     <div class="caja">
         <h2 id="text-decoration"><code>text-decoration</code></h2>
         <p>Especifica la decoración añadida al texto. Es una propiedad abreviada para las siguientes propiedades:</p>
-        <h3><code>text-decoration-line</code></h3>
+        <h3 id="text-decoration-line"><code>text-decoration-line</code></h3>
         <p>Establece el tipo de decoración de texto que se utilizará.</p>
         <div class="ejemplos">
             <p class="text-decoration-line-none">Un párrafo con <code>text-decoration-line</code> en valor
@@ -157,7 +159,7 @@
                 href="https://www.w3schools.com/cssref/css3_pr_text-decoration-line.asp"><code>text-decoration-line</code>
                 en
                 W3Schools</a></p>
-        <h3><code>text-decoration-color</code></h3>
+        <h3 id="text-decoration-color"><code>text-decoration-color</code></h3>
         <p>Especifica el color de la decoración del texto.</p>
         <div class="ejemplos">
             <p class="text-decoration-color-red">Un párrafo subrayado con <code>underline</code> y valor de
@@ -171,7 +173,7 @@
                 href="https://www.w3schools.com/cssref/css3_pr_text-decoration-color.asp"><code>text-decoration-color</code>
                 en
                 W3Schools</a></p>
-        <h3><code>text-decoration-style</code></h3>
+        <h3 id="text-decoration-style"><code>text-decoration-style</code></h3>
         <p>Establece el estilo de la decoración del texto.</p>
         <div class="ejemplos">
             <p class="text-decoration-style-solid">Un párrafo con <code>text-decoration-style</code> en valor
@@ -193,7 +195,7 @@
                 href="https://www.w3schools.com/cssref/css3_pr_text-decoration-style.asp"><code>text-decoration-style</code>
                 en
                 W3Schools</a></p>
-        <h3><code>text-decoration-thickness</code></h3>
+        <h3 id="text-decoration-thickness"><code>text-decoration-thickness</code></h3>
         <p>Especifica el grosor de la línea de decoración.</p>
         <div class="ejemplos">
             <p class="text-decoration-thickness-1">Un párrafo subrayado con <code>underline</code> y valor de
@@ -207,7 +209,7 @@
                 href="https://www.w3schools.com/cssref/pr_text_text-decoration-thickness.asp"><code>text-decoration-thickness</code>
                 en
                 W3Schools</a></p>
-        <h3>Combinaciones con <code>text-decoration</code></h3>
+        <h3 id="text-decoration-combinaciones">Combinaciones con <code>text-decoration</code></h3>
         <p>Las siguientes declaraciones:</p>
         <div class="codigo">
             <p>text-decoration-line: underline;</p>
@@ -279,29 +281,7 @@
         <div class="caja">
             <h2 id="list-style"><code>list-style</code></h2>
             <p>Es una abreviatura de las siguientes propiedades:</p>
-            <ul>
-                <li><code>list-style-type</code>: Especifica el tipo de viñeta del elemento de lista.
-                </li>
-                <li><code>list-style-position</code>: Especifica dónde colocar la viñeta del elemento de lista.</li>
-                <li><code>list-style-image</code>: Especifica el tipo de viñeta del elemento de lista.</li>
-            </ul>
-            <p>Si falta uno de los valores, se utilizará el valor predeterminado para esa propiedad.</p>
-            <p>Las siguientes declaraciones:</p>
-            <div class="codigo">
-                <p>list-style-type: disc;</p>
-                <p>list-style-position: outside;</p>
-                <p>list-style-image: none;</p>
-            </div>
-            <p>pueden abreviarse utilizando la propiedad <code>list-style</code>:</p>
-
-            <div class="codigo">
-                <p>list-style: disc outside none;</p>
-            </div>
-            <p>Ver más sobre <a target="_blank"
-                    href="https://www.w3schools.com/cssref/pr_list-style.asp"><code>list-style</code>
-                    en
-                    W3Schools</a></p>
-            <h3><code>list-style-type</code></h3>
+            <h3 id="list-style-type"><code>list-style-type</code></h3>
             <p>Especifica el tipo de viñeta del elemento de lista.</p>
             <div class="ejemplos">
                 <ul class="list-style-type-disc">
@@ -417,13 +397,13 @@
                     href="https://www.w3schools.com/cssref/pr_list-style-type.asp"><code>list-style-type</code>
                     en
                     W3Schools</a></p>
-            <h3><code>list-style-position</code></h3>
+            <h3 id="list-style-position"><code>list-style-position</code></h3>
             <p>Especifica dónde colocar la viñeta del elemento de lista. </p>
             <div class="ejemplos">
                 <ul class="list-style-position-outside">
-                    <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code></li>
-                    <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code></li>
-                    <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code></li>
+                    <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code> (por defecto).</li>
+                    <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code> (por defecto).</li>
+                    <li>Ítem de lista con <code>list-style-position</code> en valor <code>outside</code> (por defecto).</li>
                     <p>Significa que las viñetas estarán fuera del elemento de la lista. El inicio de cada línea de un
                         elemento de la lista se alineará verticalmente.</p>
                 </ul>
@@ -439,7 +419,7 @@
                     href="https://www.w3schools.com/cssref/pr_list-style-position.asp"><code>list-style-position</code>
                     en
                     W3Schools</a></p>
-            <h3><code>list-style-image</code></h3>
+            <h3 id="list-style-image"><code>list-style-image</code></h3>
             <p>Eeemplaza la viñeta de un elemento de lista con una imagen.</p>
             <div class="ejemplos">
                 <ul class="list-style-image-1">
@@ -460,6 +440,24 @@
             </div>
             <p>Ver más sobre <a target="_blank"
                     href="https://www.w3schools.com/cssref/pr_list-style-image.asp"><code>list-style-image</code>
+                    en
+                    W3Schools</a></p>
+            <h3 id="list-style-combinaciones">Combinaciones con <code>list-style</code></h3>
+            <p>Las siguientes declaraciones:</p>
+            <div class="codigo">
+                <p>list-style-type: disc;</p>
+                <p>list-style-position: outside;</p>
+                <p>list-style-image: none;</p>
+            </div>
+            <p>pueden abreviarse utilizando la propiedad <code>list-style</code>:</p>
+
+            <div class="codigo">
+                <p>list-style: disc outside none;</p>
+            </div>
+            <p>Si falta uno de los valores, se utilizará el valor predeterminado para esa propiedad.</p>
+
+            <p>Ver más sobre <a target="_blank"
+                    href="https://www.w3schools.com/cssref/pr_list-style.asp"><code>list-style</code>
                     en
                     W3Schools</a></p>
         </div>
